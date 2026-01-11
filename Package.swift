@@ -15,7 +15,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "KmmFirebaseAuth",
-            url: "https://github.com/developerroshan09/xcframework_dist_spm/releases/download/1.1.3/ComposeApp.xcframework.zip",
+            url: "https://github.com/developerroshan09/xcframework_dist_spm/releases/download/1.0.0/ComposeApp.xcframework.zip",
             checksum: "7d7440e4242b56e0189a02365c268bc0c81f206e496a305e60ded9374f1e6595"
         )
     ]
