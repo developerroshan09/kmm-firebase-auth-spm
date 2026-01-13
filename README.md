@@ -87,6 +87,20 @@ Add new URL Type
 Paste the reversed client ID
 This is required for Google Sign-In to work.
 
+*NOTE: Add GIDClientID to Info.plist (IMPORTANT)
+Open GoogleService-Info.plist
+Copy the value of: CLIENT_ID
+Open your app’s Info.plist
+Add a new key: <key>GIDClientID</key>
+<string>YOUR_CLIENT_ID_FROM_FIREBASE</string>
+
+# Why GIDClientID is Required
+Firebase configures OAuth internally
+Google Sign-In SDK still requires GIDClientID explicitly
+Without it:
+Sign-in may silently fail
+Token exchange can break on some devices
+
 🚀 AppDelegate Setup (iOS)
 Your main app must configure Firebase once at launch.
 import SwiftUI
